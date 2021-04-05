@@ -2,7 +2,7 @@
   <div class="column is-one-third">
     <nav class="panel is-link">
       <p class="panel-heading">
-        <%= @entry.meal %>       
+        <%= @entry.meal %> on <%= (@entry.created_at).strftime("%B %d, %Y") %> at <%= (@entry.created_at).strftime("%I:%S %p") %> 
       </p>
 
       <div class="panel-block">
