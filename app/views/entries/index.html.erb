@@ -1,4 +1,3 @@
-<p id="notice"><%= notice %></p>
 <div class="columns mt-6 is-centered">
     <% @entries.each do |entry| %>
       <div class="column is-one-quarter">
@@ -16,9 +15,9 @@
             </div>
           </div>
           <div class="card-footer">
-            <%= link_to 'Show', entry, class: "button is-info" %>
-            <%= link_to 'Edit', edit_entry_path(entry), class: "button is-warning"  %>
-            <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, class: "button is-danger"  %>
+            <%= link_to 'Show', entry, class: "card-footer-item button is-info" %>
+            <%= link_to 'Edit', edit_entry_path(entry), class: "card-footer-item button is-warning"  %>
+            <%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, class: "card-footer-item button is-danger"  %>
           </div>
         </div>
       </div>

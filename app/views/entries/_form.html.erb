@@ -6,8 +6,8 @@
       </div>
       <div class="message-body">
         <ul>
-          <% entry.errors.each do |error| %>
-            <li><%= error.full_message %></li>
+          <% entry.errors.full_message.each do |message| %>
+            <li><%= message %></li>
           <% end %>
         </ul>
     </div>
