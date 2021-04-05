@@ -15,30 +15,31 @@
 
   <div class="field">
     <%= form.label :meal, class: "label" %>
-    <%= form.text_field :meal, class: "input" %>
+    <%= form.text_field :meal, class: "input is-rounded" %>
   </div>
 
   <div class="field">
     <%= form.label :calories, class: "label" %>
-    <%= form.number_field :calories, class: "input" %>
+    <%= form.number_field :calories, class: "input is-rounded" %>
   </div>
 
   <div class="field">
     <%= form.label :proteins, class: "label" %>
-    <%= form.number_field :proteins, class: "input" %>
+    <%= form.number_field :proteins, class: "input is-rounded" %>
   </div>
 
   <div class="field">
     <%= form.label :carbs, class: "label" %>
-    <%= form.number_field :carbs, class: "input" %>
+    <%= form.number_field :carbs, class: "input is-rounded" %>
   </div>
 
   <div class="field">
     <%= form.label :fats, class: "label" %>
-    <%= form.number_field :fats, class: "input" %>
+    <%= form.number_field :fats, class: "input is-rounded" %>
   </div>
 
   <div class="actions">
     <%= form.submit class: "button is-success" %>
+    <%= link_to 'Back', entries_path, class: "button is-dark" %>
   </div>
 <% end %>
